@@ -1,2 +1,76 @@
 html {box-sizing:border-box;}
 *, *::before, *::after {box-sizing:inherit;}
+
+body{
+  background: #212121;
+  color: white;
+}
+.chat{
+  width:800px;
+  display: flex;
+  margin: auto;
+}
+.chatArea{
+  width: 600px;
+  width: 600px;
+}
+.chatwindow{
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+.messageInput {
+  border: 2px solid black;
+  padding-left: 5px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+.messageInput > textarea{
+  color: white;
+  border: none;
+  width: 585px;
+  overflow: hidden;
+  outline: none;
+  background: transparent;
+}
+.user{
+  font-size: 13px;
+  margin-left: 30px;
+}
+.message{
+  border: 1px solid black;
+  background: black;
+  border-radius: 34px;
+  padding: 0 -16px o 5px;
+  padding-left: 15px;
+  position: relative;
+}
+.message:after{
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 4%;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top-color: black;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -12.5px;
+  margin-bottom: -25px;
+}
+.indmessage{
+  margin: 0 10px 5px 10px;
+}
+.time{
+  font-size: 10px;
+  font-style: italic;
+}
+.chatSidebar{
+  border: 1px solid black;
+  width: 200px;
+  padding: 20px 0 10px 0;
+}
